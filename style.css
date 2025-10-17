@@ -150,7 +150,7 @@ section{
         height: 50px;
     }
     h1{
-        font-size: 28px;
+        font-size: 20px;
         margin: 20px 0px 0px 0px;
     }
     nav li a{
@@ -159,5 +159,42 @@ section{
     }
     nav li:hover a{
         padding: 5px 10px 10px 10px;
+    }
+    .left .manda {
+        width: 95px;
+        height: 120px;
+    }
+    .sous h3, .sous p {
+        font-size: 11px;
+    }
+    .left .isstm {
+        width: 95px;
+        height: 95px;
+    }
+    .left .diplome {
+        width: 140px;
+        height: 100px;
+    }
+    .parcours .sec, .suite .sec, .hobbie .sec, .hobb .sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .parcours .left, .parcours .right, .suite .left, .suite .right, .hobbie .left, .hobbie .right, .hobb .left, .hobb .right {
+        float: none;
+        width: 100%;
+    }
+    .parcours .left img, .suite .left img, .hobbie .left img, .hobb .left img {
+        display: block;
+        margin: 0 auto 15px auto; 
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+    }
+    .parcours .right p, .suite .right p, .hobbie .right p, .hobb .right p {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 10px;
     }
 }
