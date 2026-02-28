@@ -197,4 +197,31 @@ section{
         width: 90%;
         margin: 0 auto 10px;
     }
+    .manda_photo {
+        width : 110px;
+        height : 150px;
+    }
+}
+.manda {
+    color : #12362f;
+    font-weight: bold;
+    animation : glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #12362f;
+    }
+    to {
+        text-shadow: 0 0 20px #19eec3, 0 0 30px #3ab89f;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
