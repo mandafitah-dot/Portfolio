@@ -270,3 +270,7 @@ section{
 .cv {
     margin-top: 130px;
 }
+.presentation .left .manda_photo {
+    width: 135px;
+    height: 180px;
+}
