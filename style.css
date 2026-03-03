@@ -145,6 +145,10 @@ section{
 .email a{
     font-size: 18px;
 }
+.presentation .sec .left .manda_photo {
+    width: 135px;
+    height: 180px;
+}
 @media screen and (max-width: 780px) {
     header{
         height: 50px;
@@ -175,35 +179,36 @@ section{
         width: 140px;
         height: 100px;
     }
-    .parcour .sec, .suite .sec, .hobbie .sec, .hobb .sec {
+    .parcour .sec, .suite .sec, .hobbie .sec, .hobb .sec, .presentation .sec {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .parcour .left, .parcour .right, .suite .left, .suite .right, .hobbie .left, .hobbie .right, .hobb .left, .hobb .right {
+    .parcour .left, .parcour .right, .suite .left, .suite .right, .hobbie .left, .hobbie .right, .hobb .left, .hobb .right, .presentation .left, .presentation .right {
         float: none;
         width: 100%;
     }
-    .parcour .left img, .suite .left img, .hobbie .left img, .hobb .left img {
+    .parcour .left img, .suite .left img, .hobbie .left img, .hobb .left img, .presentation .left img {
         display: block;
         margin: 0 auto 15px auto; 
         width: 80%;
         max-width: 280px;
         height: auto;
+        
     }
     .parcour .right p, .suite .right p, .hobbie .right p, .hobb .right p {
         text-align: center;
         width: 90%;
         margin: 0 auto 10px;
     }
-    .manda_photo {
+    .presentation .left .manda_photo {
         width : 110px;
         height : 150px;
     }
 }
 @media screen and (min-width: 480px) {
-    .manda_photo {
+    .presentation .left .manda_photo {
         width : 90px;
         height : 120px;
     }
@@ -269,8 +274,4 @@ section{
 }
 .cv {
     margin-top: 130px;
-}
-.presentation .left .manda_photo {
-    width: 135px;
-    height: 180px;
 }
