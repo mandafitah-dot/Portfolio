@@ -1,113 +1,129 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Présentation de RAHERIJAONA Manda Fitahiana - CV">
+    <title>Manda Fitahiana | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Mon CV  en ligne</title>
 </head>
 <body>
     <header>
-        <h1 class="manda">RAHERIJAONA Manda Fitahiana</h1>
-    </header>
-    <nav>
-        <div class="table">
-            <ul>
-                <li class="menu-ind">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="menu-exp">
-                    <a href="experience.html">Parcours</a>
-                </li>
-                <li class="menu-hob">
-                    <a href="hobbies.html">Loisirs</a>
-                </li>
-                <li class="menu-cont">
-                    <a href="contact.html">Contactez-moi</a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">MF</div>
+                <div class="nav-links">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#parcours">Parcours</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#loisir">Loisirs</a>
+                </div>
+                <button id="theme-toggle" class="theme-sombre">🌙 Mode sombre
+                </button>
+                
+            </div>
         </div>
-    </nav>
-    
-    <article>
-        <section class="presentation">
-            <div class="sec">
-                <h1>Qui suis-je</h1>
-                <div class="left">
-                    <img src="images/manda.jpeg" alt="Photo de CV" class="manda_photo">
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section id="accueil" class="hero">
+            <div class="container-head">
+                <div class="img">
+                    <img src="photo.jpg" alt="Mon Image" class="img-photo">
                 </div>
-                <div class="right">
-                    <p>Je m’appelle Manda Fitahiana, né le 06 mai 2006 à Mahajanga, où je vis actuellement.</p>
-                    <p>Mon objectif est de devenir un développeur compétent et de me spécialiser dans la cybersécurité.</p>
-                    <p>Je suis étudiant en informatique à l’ISSTM. Passionné par le développement et les nouvelles technologies, je cherche constamment à améliorer mes compétences et à créer des projets concrets.</p>
+                <div class="hero-content">
+                    <h1>RAHERIJAONA<br>Manda Fitahiana</h1>
+                    <p>Étudiant en informatique passionné par le développement et la cybersécurité. À la recherche d'un stage pour mettre en pratique mes compétences.</p>
+                    <a href="https://drive.google.com/file/d/1TMVQrHnGnzHRiYTlt5ub_QSoIAFpxGOj/view?usp=drive_link" class="btn-cv" target="_blank">📄 Voir mon CV</a>
                 </div>
             </div>
         </section>
 
-        <section class="parcours">
-            <h1>Parcours</h1>
-            <div class="par">
-                <div class="left">
-                    <h3>2024 - 2025</h3>
+        <!-- Parcours -->
+        <section id="parcours" class="container">
+            <h2>📚 Mon parcours</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🎓 2025 - 2026</h3>
+                    <p><strong>Deuxieme année de licence</strong><br>ISSTM - Institut Supérieur des Sciences et des Technologies de Mahajanga</p>
                 </div>
-                <div class="right">
-                    <h3>Première année de licence</h3>
-                    <p>ISSTM (Institut Supérieur des Sciences et des Technologies de Mahajanga)</p>
+                <div class="skill-card">
+                    <h3>🎓 2024 - 2025</h3>
+                    <p><strong>Première année de licence</strong><br>ISSTM - Institut Supérieur des Sciences et des Technologies de Mahajanga</p>
                 </div>
-            </div>
-            <div class="par">
-                <div class="left">
-                    <h3>2023- 2024</h3>
-                </div>
-                <div class="right">
-                    <h3>Baccalauréat série D</h3>
-                    <p>Lycée Philibert Tsiranana Mahajanga (Bien) </p>
+                <div class="skill-card">
+                    <h3>🏆 2023 - 2024</h3>
+                    <p><strong>Baccalauréat série D</strong><br>Lycée Philibert Tsiranana Mahajanga - Mention Bien</p>
                 </div>
             </div>
         </section>
 
-        <section class="competence">
-            <h1>Compétences et niveau</h1>
-            <div class="sec">
-                <div class="cleft">
-                    <div class="sous">
-                        <div class="sousleft"><h3>Compétences</h3></div>
-                        <div class="sousright"><h3>Niveau</h3></div>
-                    </div>
-                    <div class="sous">
-                        <div class="sousleft"><p>HTML / CSS</p></div>
-                        <div class="sousright"><P>AMATEUR</P></div>
-                    </div>
-                    <div class="sous">
-                        <div class="sousleft"><p>Javascript</p></div>
-                        <div class="sousright"><p>DEBUTANT</p></div>
-                    </div>
-                    <div class="sous">
-                        <div class="sousleft"><p>C / C++</p></div>
-                        <div class="sousright"><p>AMATEUR</p></div>
-                    </div>
+        <!-- Compétences -->
+        <section id="competences" class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 32px;">⚙️ Compétences techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-name"><span>HTML / CSS</span><span>70%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 70%"></div></div>
+                    <p>Création de sites responsives, animations CSS</p>
                 </div>
-                <div class="cright">
-                    <div class="sous">
-                        <div class="sousleft"><h3>Compétences</h3></div>
-                        <div class="sousright"><h3>Niveau</h3></div>
-                    </div>
-                    <div class="sous">
-                        <div class="sousleft"><p>PHP / SQL</p></div>
-                        <div class="sousright"><P>DEBUTANT</P></div>
-                    </div>
-                    <div class="sous">
-                        <div class="sousleft"><p>Python</p></div>
-                        <div class="sousright"><p>AMATEUR</p></div>
-                    </div>
+                <div class="skill-card">
+                    <div class="skill-name"><span>JavaScript</span><span>40%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 40%"></div></div>
+                    <p>Interactivité, manipulation du DOM</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name"><span>C / C++</span><span>65%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 65%"></div></div>
+                    <p>Algorithmique, programmation système</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name"><span>PHP / SQL</span><span>35%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 35%"></div></div>
+                    <p>Bases de données, développement backend</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-name"><span>Python</span><span>55%</span></div>
+                    <div class="progress-bar"><div class="progress-fill" style="width: 55%"></div></div>
+                    <p>Scripting, automatisation</p>
                 </div>
             </div>
         </section>
-    </article>
-    <script src="interaction.js"></script>
+
+        <!-- Section Centres d'intérêt - Version cartes -->
+        <section id="loisir" class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 32px;">Centres d'intérêt</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🏀 Basket-ball</h3>
+                    <p>Esprit d'équipe, discipline et dépassement de soi</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🎵 Musique</h3>
+                    <p>Créativité, sens de l'harmonie et concentration</p>
+                </div>
+                <div class="skill-card">
+                    <h3>🎮 Jeux vidéo</h3>
+                    <p>Logique, stratégie et résolution de problèmes</p>
+                </div>
+                <div class="skill-card">
+                    <h3>📰 Articles tech</h3>
+                    <p>Veille technologique et autodidaxie</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>Copyright 2025 RAHERIJAONA Manda Fitahiana -  Toute reproduction interdite</p>
+        <div class="container">
+            <p>📧 mandafitah@gmail.com | 📍 Mahajanga, Madagascar</p>
+            <p style="margin-top: 16px;">🔗 <a href="https://github.com/mandafitah-dot" style="color: #2563eb;">GitHub</a></p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
